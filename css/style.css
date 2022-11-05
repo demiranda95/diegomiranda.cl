@@ -141,6 +141,15 @@ header {
 
 /* Secciones */
 
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+
 .title {
     padding: 10rem 0;
     text-align: center;
@@ -149,6 +158,91 @@ header {
     text-align: center;
     color: #D05919;
 }
+
+.servicios__cards {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    gap: 6rem;
+    }
+
+.portafolio__cards {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    gap: 6rem;
+    }
+
+.card {
+    /* Add shadows to create the "card" effect */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-height: 100%;
+    width: 40rem;
+    gap: 3rem;
+    overflow: hidden;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.2);
+    transition: 0.6s;
+}
+
+.card img {
+    width: 100%;
+}
+
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+  /* Add some padding inside the card container */
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #D05919;
+    color: white;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.button {
+    text-align: center;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    grid-area: button;
+}
+
+.button a {
+    font-size: 2rem;
+    color: white;
+    border: solid 0.1rem #D05919;
+    background-color: #D05919;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+
 
 .servicios table, .portafolio table {
     margin: auto;
@@ -178,21 +272,7 @@ header {
     height: auto;
 }
 
-.button {
-    text-align: center;
-    padding: 5rem;
-    margin-bottom: 10rem;
-}
 
-.button a {
-    font-size: 2rem;
-    color: white;
-    border: solid 0.1rem #D05919;
-    background-color: #D05919;
-    padding: 1rem;
-    border-radius: 2rem;
-    text-decoration: none;
-}
 
 /* Acerca */
 
