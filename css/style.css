@@ -180,13 +180,13 @@ header {
     }
 
 .card {
-    /* Add shadows to create the "card" effect */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     max-height: 100%;
-    width: 40rem;
+    width: 100%;
     gap: 3rem;
     overflow: hidden;
     box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.2);
@@ -407,25 +407,12 @@ input#nombre, input#email, .contacto__form select, .contacto__form textarea {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
     background-color: black;
-    padding-top: 3rem;
-}
-
-footer table {
-    margin: 5rem 0;
-    width: 100%;
-}
-
-
-footer td {
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 2.5rem;
-    width: 25%;
-    border: solid 0.1rem black;
-    color: white;
 }
 
 footer img {
@@ -433,7 +420,42 @@ footer img {
     padding: 1rem;
 }
 
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.footer__contacto h3 {
+    margin-bottom: 1rem;
+}
+
+.footer__logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__navigation li {
+    display: flex;
+    justify-content: center;
     background-color: #D05919;
     padding: 0.5rem;
     border-radius: 3rem;
@@ -450,11 +472,14 @@ footer img {
 }
 
 
-.footer__derechos {
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 2rem;
     text-align: center;
     color: white;
     font-weight: bold;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
