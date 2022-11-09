@@ -5,214 +5,269 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
     <title>Servicios de Programacion - Diego Miranda</title>
-    <script src="https://kit.fontawesome.com/93b6d8b5a4.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark">
     <!-- Header -->
-    <header class="color5">
-        <div class="header__logo">
-            <a href="index.html"><img src="img/logo/logo-white.png" alt="Logo Diego Miranda"></a>
-        </div>
-        <div class="header__navigation color1">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>                   
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-color5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo/logo-white.png" alt="Logo Diego Miranda"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fs-1 color1"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavDropdown">
+                <ul class="navbar-nav bg-color1 justify-content-center align-items-center rounded-5">
+                    <li class="nav-item active mx-2 py-2">
+                        <a class="nav-link text-light" href="index.html"><b>Inicio</b></a>
                     </li>
-                    <li>
-                        <a href="pages/acerca.html">Acerca</a>
+                    <li class="nav-item active mx-2 py-2">
+                        <a class="nav-link text-light" href="pages/skills.html">Skills</a>
                     </li>
-                    <li>
-                        <a href="pages/servicios.html">Servicios</a>
+                    <li class="nav-item active mx-2 py-2">
+                        <a class="nav-link text-light" href="pages/servicios.html">Servicios</a>
                     </li>
-                    <li>
-                        <a href="pages/portafolio.html">Portafolio</a>
+                    <li class="nav-item active mx-2 py-2">
+                        <a class="nav-link text-light" href="pages/portafolio.html">Portafolio</a>
                     </li>
-                    <li>
-                        <a href="pages/contacto.html">Contacto</a>
+                    <li class="nav-item active mx-2 py-2">
+                        <a class="nav-link text-light" href="pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
-            </nav>    
-        </div>
+            </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- Banner Principal -->
-    <section>
-        <div class="banner color4">
-            <div class="banner__img">
-                <img src="img/banner-principal.png" alt="Banner Principal" height="500">
+    <main>
+        <!-- Banner Principal -->
+        <section>
+            <div class="container-fluid p-0 m-0 h-100">
+                <div id="home-banner" class="p-5 text-center bg-image">
+                    <div class="banner-bg-mask h-100 d-flex align-items-center justify-content-center">
+                        <div class="text-white">
+                            <h1 class="display-1 mb-3">DIEGO MIRANDA</h1>
+    
+                            <p class="h4 mb-4">Digitalicemos la vida y avancemos al FUTURO</p>
+    
+                            <a class="btn bg-color1 text-light btn-lg m-2" href="pages/portafolio.html" role="button">Portafolio</a>
+    
+                            <a class="btn bg-color1 text-light btn-lg m-2" href="pages/contacto.html" role="button">Contactame</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <!-- Servicios -->
+        <section class="servicios bg-light mb-5">
+            <div class="container d-flex justify-content-center align-content-around">
+                <h2 class="display-1 fw-semibold color1 p-5 text-center">¿Como te puedo ayudar?</h2>
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center alto-100">
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-12 col-lg-5 mb-4">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="card-title h3">Sitios Web Premium</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-7 mb-4">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="card-title h3">Sistemas Personalizados</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-8 mb-4">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="card-title h3">Diseño Responsive</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-4">
+                                <div class="card">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                        <p class="card-title h3">Sistemas Embebed y Robotizados</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <p class="card-title h3">Marketing Digital</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>        
+        </section>
 
-    <!-- Seccion de Servicios -->
-    <section class="section">
-        <div class="title">
-            <h2>¿Como te podemos ayudar?</h2>
-        </div>
-        <div class="servicios__cards">
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>Sitios Web Premium</b></h3>
+        <!-- Banner Secundario-->
+        <section class="second-banner bg-color1">
+            <div class="container-fluid p-0 m-0 h-100">
+                <div id="second-banner" class="p-5 text-center bg-image">
+                    <div class="banner-bg-mask h-100 d-flex align-items-center justify-content-center">
+                        <div class="text-white">
+                            <h2 class="h1 mb-3"></h2>
+    
+                            <h5 class="h5 mb-4"></h5>
+    
+                            <a class="btn bg-color1 text-light btn-lg m-2" href="#" role="button">Button 1</a>
+    
+                            <a class="btn bg-color1 text-light btn-lg m-2" href="#" role="button">Button 2</a>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/logo/logo-192x192.png" alt="Avatar">
             </div>
-            <div class="card">
-                <div class="card-title">
-                    <h4><b>Sistemas Personalizados</b></h4>
-                </div>
-                <img src="img/logo/logo-192x192.png" alt="Avatar">
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h4><b>Marketing Digital</b></h4>
-                </div>
-                <img src="img/logo/logo-192x192.png" alt="Avatar">
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h4><b>Diseño Responsive para Apps</b></h4>
-                </div>
-                <img src="img/logo/logo-192x192.png" alt="Avatar">
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h4><b>Sistemas Embebed y Robotizados</b></h4>
-                </div>
-                <img src="img/logo/logo-192x192.png" alt="Avatar">
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h4><b>Identidad Virtual, Diseño y Branding</b></h4>
-                </div>
-                <img src="img/logo/logo-192x192.png" alt="Avatar">
-            </div>
-        </div>
-        <div class="button">
-            <a href="pages/servicios.html">Más Información</a>
-        </div>
-    </section>
+        </section>
 
+        <!-- Portafolio -->
+        <section class="portafolio bg-dark py-5">
+            <div class="container d-flex justify-content-center align-content-around">
+                <h2 class="display-1 fw-semibold color1 p-5 text-center">Casos de Éxito</h2>
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center alto-100">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="card rounded">
+                            <h3 class="card-header bg-color1 text-white py-2">Hexa</h3>
+                            <img src="img/website1.jpg" class="card-img-top" alt="website1">
+                            <div class="card-body">
+                                <p class="card-text">Interior Design</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="card rounded">
+                            <h3 class="card-header bg-color1 text-white py-2">Shionhouse</h3>
+                            <img src="img/website2.jpg" class="card-img-top" alt="website1">
+                            <div class="card-body">
+                                <p class="card-text">eCommerce, Fashion</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="card rounded">
+                            <h3 class="card-header bg-color1 text-white py-2">Academia</h3>
+                            <img src="img/website3.jpg" class="card-img-top" alt="website1">
+                            <div class="card-body">
+                                <p class="card-text">Bootstrap 5, Education</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="card rounded">
+                            <h3 class="card-header bg-color1 text-white py-2">Buson</h3>
+                            <img src="img/website4.jpg" class="card-img-top" alt="website1">
+                            <div class="card-body">
+                                <p class="card-text">Consulting</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="card rounded">
+                            <h3 class="card-header bg-color1 text-white py-2">Photosen</h3>
+                            <img src="img/website5.jpg" class="card-img-top" alt="website1">
+                            <div class="card-body">
+                                <p class="card-text">Photography, Portfolio</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5">
+                        <div class="card rounded">
+                            <h3 class="card-header bg-color1 text-white py-2">LogisticExpress</h3>
+                            <img src="img/website6.jpg" class="card-img-top" alt="website1">
+                            <div class="card-body">
+                                <p class="card-text">Transportation</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Seccion de Portafolio -->
-    <section class="section">
-        <div class="title">
-            <h2>Casos de Éxito</h2>
-        </div>
-        <div class="portafolio__cards">
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>Hexa</b></h3>
-                </div>
-                <img src="img/website1.jpg" alt="Avatar">
-                <div class="card-content">
-                    <p>Interior Design</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>Shionhouse</b></h3>
-                </div>
-                <img src="img/website2.jpg" alt="Avatar">
-                <div class="card-content">
-                    <p>eCommerce, Fashion</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>Academia</b></h3>
-                </div>
-                <img src="img/website3.jpg" alt="Avatar">
-                <div class="card-content">
-                    <p>Bootstrap 5, Education</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>Buson</b></h3>
-                </div>
-                <img src="img/website4.jpg" alt="Avatar">
-                <div class="card-content">
-                    <p>Consulting</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>Photosen</b></h3>
-                </div>
-                <img src="img/website5.jpg" alt="Avatar">
-                <div class="card-content">
-                    <p>Photography, Portfolio</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">
-                    <h3><b>LogisticExpress</b></h3>
-                </div>
-                <img src="img/website6.jpg" alt="Avatar">
-                <div class="card-content">
-                    <p>Transportation</p>
-                </div>
-            </div>
-        </div>
-        <div class="button">
-            <a href="pages/portafolio.html">Más Trabajos</a>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer__content">
-            <div class="footer__logo">
-                <a href="index.html"><img src="img/logo/logo-square-white.png" alt="Logo Footer" class="color1"></a>
+        <div id="footer" class="container-fluid bg-black">
+            <div class="row">
+                <div class="footer__logo col-12 col-sm-12 col-lg-3 py-5 d-flex justify-content-center align-items-center">
+                    <a href="index.html">
+                        <img src="img/logo/logo-square-white.png" alt="Logo Diego Niranda Square White" class=" rounded-circle">
+                    </a>
+                </div> 
+                <div class="footer__contacto col-12 col-sm-12 col-lg-3 py-5 d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="text-center text-white">Contacto</h2>
+                    <a class="btn btn-outline-light rounded-pill" href="mailto:contacto@diegomiranda.cl">
+                        <i class="fa-regular fa-envelope"></i> contacto@diegomiranda.cl
+                    </a>
+                    <a class="btn btn-outline-light rounded-pill" href="https://api.whatsapp.com/send?phone=56939495454">
+                        <i class="fa-brands fa-whatsapp"></i> +56 9 3949 5454
+                    </a>
+                </div> 
+                <div class="footer__maps col-lg-3 py-5 d-flex flex-wrap justify-content-center align-items-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.19734941525!2d-70.76991399299249!3d-33.47242276868387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1667769110876!5m2!1ses!2scl" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+                <div class="footer__nav col-lg-3 py-5 d-flex flex-wrap justify-content-center align-items-center">
+                    <a class="btn btn-outline-light rounded-pill" href="index.html">Inicio</a>
+                    <a class="btn btn-outline-light rounded-pill" href="pages/acerca.html">Acerca</a>
+                    <a class="btn btn-outline-light rounded-pill" href="pages/servicios.html">Servicios</a>
+                    <a class="btn btn-outline-light rounded-pill" href="pages/portafolio.html">Portafolio</a>
+                    <a class="btn btn-outline-light rounded-pill" href="pages/contacto.html">Contacto</a>
+                </div>
             </div>
-            <div class="footer__contacto">
-                <h3>Contacto</h3>
-                <ul>
-                    <li>
-                        
-                        <a href="mailto:contacto@diegomiranda.cl"><i class="fa-regular fa-envelope"></i> contacto@diegomiranda.cl</a>
-                    </li>
-                    <li>
-                        
-                        <a href="https://api.whatsapp.com/send?phone=56939495454"><i class="fa-brands fa-whatsapp"></i> +56 9 3949 5454</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="footer__copyright col d-flex flex-column justify-content-center align-items-center">
+                    <p><a href="index.html">Diego Miranda</a> - Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2022</p>
+                </div>
             </div>
-            <div class="footer_maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.19734941734!2d-70.76991399299249!3d-33.47242276868387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1666579037666!5m2!1ses!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="footer__navigation">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Inicio</a>                    
-                        </li>
-                        <li>
-                            <a href="pages/acerca.html">Acerca</a>
-                        </li>
-                        <li>
-                            <a href="pages/portafolio.html">Portafolio</a>
-                        </li>
-                        <li>
-                            <a href="pages/servicios.html">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="footer__copyright color1">
-            <p><a href="index.html">Diego Miranda</a> - Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2022</p>
         </div>
     </footer>
 
+
+    <!-- Scripts -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/93b6d8b5a4.js" crossorigin="anonymous"></script>
+    <!-- WOW.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
