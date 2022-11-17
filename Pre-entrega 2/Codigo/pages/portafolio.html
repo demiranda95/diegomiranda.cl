@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>PORTAFOLIO - Diego Miranda</title>
 </head>
-<body>
+<body class="bg-dark">
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-color5">
@@ -23,19 +23,19 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNavDropdown">
                 <ul class="navbar-nav bg-color1 justify-content-center align-items-center rounded-5">
-                    <li class="nav-item active mx-2 py-2">
-                        <a class="nav-link text-light" href="../index.html">Inicio</a>
+                    <li class="nav-item mx-2 py-2">
+                        <a class="nav-link text-light active" aria-current="true" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item active mx-2 py-2">
+                    <li class="nav-item mx-2 py-2">
                         <a class="nav-link text-light" href="skills.html">Skills</a>
                     </li>
-                    <li class="nav-item active mx-2 py-2">
+                    <li class="nav-item mx-2 py-2">
                         <a class="nav-link text-light" href="servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item active mx-2 py-2">
-                        <a class="nav-link text-light" href="portafolio.html">Portafolio</a>
+                    <li class="nav-item mx-2 py-2">
+                        <a class="nav-link text-light active" aria-current="true" href="portafolio.html"><b>Portafolio</b></a>
                     </li>
-                    <li class="nav-item active mx-2 py-2">
+                    <li class="nav-item mx-2 py-2">
                         <a class="nav-link text-light" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -45,27 +45,103 @@
     </header>
 
     <!-- Banner Pagina Secundaria -->
-    <section>
-        <div class="banner2 color4">
-            <div class="banner2__img">
-                <!-- <img src="../img/banner-principal.png" alt="Banner Secundario" height="500"> -->
-            </div>
-            <div class="banner2__title">
-                <h2>PORTAFOLIO</h2>
+    <section class="second-banner bg-color1 mb-5">
+        <div class="container-fluid p-0 m-0 h-100">
+            <div id="second-page-banner" class="p-5 text-center bg-image">
+                <div class="banner-bg-mask h-100 d-flex align-items-center justify-content-center">
+                    <div class="text-white">
+                        <P class="display-1 fw-semibold mb-3">PORTAFOLIO</P>
+
+                        <h5 class="h5 mb-4"></h5>
+
+                        <!-- <a class="btn bg-color1 text-light btn-lg m-2" href="#" role="button">Button 1</a>
+
+                        <a class="btn bg-color1 text-light btn-lg m-2" href="#" role="button">Button 2</a> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="portafolio py-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center alto-100">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card rounded">
+                        <h3 class="card-header bg-color1 text-white py-2">Hexa</h3>
+                        <img src="../img/website1.jpg" class="card-img-top" alt="website1">
+                        <div class="card-body">
+                            <p class="card-text">Interior Design</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card rounded">
+                        <h3 class="card-header bg-color1 text-white py-2">Shionhouse</h3>
+                        <img src="../img/website2.jpg" class="card-img-top" alt="website1">
+                        <div class="card-body">
+                            <p class="card-text">eCommerce, Fashion</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card rounded">
+                        <h3 class="card-header bg-color1 text-white py-2">Academia</h3>
+                        <img src="../img/website3.jpg" class="card-img-top" alt="website1">
+                        <div class="card-body">
+                            <p class="card-text">Bootstrap 5, Education</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card rounded">
+                        <h3 class="card-header bg-color1 text-white py-2">Buson</h3>
+                        <img src="../img/website4.jpg" class="card-img-top" alt="website1">
+                        <div class="card-body">
+                            <p class="card-text">Consulting</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card rounded">
+                        <h3 class="card-header bg-color1 text-white py-2">Photosen</h3>
+                        <img src="../img/website5.jpg" class="card-img-top" alt="website1">
+                        <div class="card-body">
+                            <p class="card-text">Photography, Portfolio</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <div class="card rounded">
+                        <h3 class="card-header bg-color1 text-white py-2">LogisticExpress</h3>
+                        <img src="../img/website6.jpg" class="card-img-top" alt="website1">
+                        <div class="card-body">
+                            <p class="card-text">Transportation</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Footer -->
     <footer>
         <div id="footer" class="container-fluid bg-black mt-5">
-            <div class="row">
-                <div class="footer__logo col-12 col-sm-12 col-lg-3 py-5 d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-around">
+                <div class="footer__logo d-flex col-12 col-sm-12 col-lg-3 py-5 justify-content-center align-items-center">
                     <a href="../index.html">
                         <img src="../img/logo/logo-square-white.png" alt="Logo Diego Niranda Square White" class=" rounded-circle">
                     </a>
                 </div> 
-                <div class="footer__contacto col-12 col-sm-12 col-lg-3 py-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="footer__contacto d-flex col-12 col-sm-12 col-lg-3 py-5 flex-column justify-content-center align-items-center">
                     <h2 class="text-center text-white">Contacto</h2>
                     <a class="btn btn-outline-light rounded-pill" href="mailto:contacto@diegomiranda.cl">
                         <i class="fa-regular fa-envelope"></i> contacto@diegomiranda.cl
@@ -74,19 +150,19 @@
                         <i class="fa-brands fa-whatsapp"></i> +56 9 3949 5454
                     </a>
                 </div> 
-                <div class="footer__maps col-lg-3 py-5 d-flex flex-wrap justify-content-center align-items-center">
+                <div class="footer__maps d-none d-xl-flex flex-wrap col-lg-3 py-5 justify-content-center align-items-center">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212999.19734941525!2d-70.76991399299249!3d-33.47242276868387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1667769110876!5m2!1ses!2scl" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div> 
-                <div class="footer__nav col-lg-3 py-5 d-flex flex-wrap justify-content-center align-items-center">
+                <div class="footer__nav d-none d-lg-flex flex-wrap col-lg-3 py-5 justify-content-center align-items-center">
                     <a class="btn btn-outline-light rounded-pill" href="../index.html">Inicio</a>
-                    <a class="btn btn-outline-light rounded-pill" href="acerca.html">Acerca</a>
+                    <a class="btn btn-outline-light rounded-pill" href="skills.html">Skills</a>
                     <a class="btn btn-outline-light rounded-pill" href="servicios.html">Servicios</a>
                     <a class="btn btn-outline-light rounded-pill" href="portafolio.html">Portafolio</a>
                     <a class="btn btn-outline-light rounded-pill" href="contacto.html">Contacto</a>
                 </div>
             </div>
             <div class="row">
-                <div class="footer__copyright col d-flex flex-column justify-content-center align-items-center">
+                <div class="footer__copyright d-flex flex-column col justify-content-center align-items-center">
                     <p><a href="../index.html">Diego Miranda</a> - Todos los derechos reservados <i class="fa-regular fa-copyright"></i> 2022</p>
                 </div>
             </div>
