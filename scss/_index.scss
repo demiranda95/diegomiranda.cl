@@ -1,0 +1,62 @@
+/* Banner Principal */
+
+#home-banner {
+    height: 28rem;
+    background-image: url('../img/banners/banner-principal1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+    #home-banner {
+      height: 38rem;
+    }
+  }
+
+.banner-bg-mask {
+    background-color: #7570838f;
+}
+
+/* Servicios */
+
+.servicios .card {
+    height: 100%;
+    text-align: center;
+    background-color: #D05919;
+    color: white;
+}
+
+.servicios .card:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #000000;
+}
+
+/* Second Banner */
+
+#second-banner {
+    height: 40rem;
+    background-image: url('../img/banners/second-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Paginas Secundarias Banner */
+
+#second-page-banner {
+    height: 32rem;
+    background-image: url('../img/banners/second-banner2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Portafolio */
+
+.portafolio .card {
+    height: 100%;
+    text-align: center;
+}

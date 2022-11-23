@@ -1,0 +1,166 @@
+/* Skills Page */
+
+/* Grid */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 80vh;
+}
+
+@media screen and (max-width: 980px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 80vh;
+    }
+}
+
+.skills-grid-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-grid-item .card {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .skills-grid-item .card {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 90%;
+    width: 90%;
+    justify-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .experience-grid .card {
+        height: 80%;
+    }
+}
+
+
+.experience-grid-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-grid-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Progress Bars */
+.progress-bar {
+    width: 60%;
+    border: solid 1px;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .progress-bar {
+        width: 100%;
+    }
+}
+
+.progress-0 {
+    border: solid 1px;
+    height: 1.5rem;
+    width: 0%;
+}
+.progress-1 {
+    border: solid 1px;
+    height: 1.5rem;
+    width: 20%;
+    animation: one-year 5s ease;
+}
+.progress-2 {
+    border: solid 1px;
+    height: 1.5rem;
+    width: 40%;
+    animation: two-year 5s ease;
+}
+.progress-3 {
+    border: solid 1px;
+    height: 1.5rem;
+    width: 60%;
+    animation: three-year 5s ease;
+}
+.progress-4 {
+    border: solid 1px;
+    height: 1.5rem;
+    width: 80%;
+    animation: four-year 5s ease;
+}
+.progress-5 {
+    border: solid 1px;
+    height: 1.5rem;
+    width: 100%;
+    animation: five-year 5s ease;
+}
+
+@keyframes one-year {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 20%;
+    }
+}
+@keyframes two-year {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 40%;
+    }
+}
+@keyframes three-year {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 60%;
+    }
+}
+@keyframes four-year {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 80%;
+    }
+}
+@keyframes five-year {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 100%;
+    }
+}

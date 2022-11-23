@@ -1,0 +1,19 @@
+{
+  "name": "33115-entrega-final",
+  "version": "1.0.0",
+  "description": "Proyecto de Desarrollo Web - Diego Miranda - CoderHouse (33115)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demiranda95/diegomiranda.github.io.git"
+  },
+  "author": "Diego Miranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demiranda95/diegomiranda.github.io/issues"
+  },
+  "homepage": "https://github.com/demiranda95/diegomiranda.github.io#readme"
+}

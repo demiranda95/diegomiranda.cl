@@ -1,334 +1,321 @@
 /* Modificaciones Sitio General */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Palette Color */
-
 .bg-color1 {
-    background-color: #D05919;
+  background-color: #D05919;
 }
+
 .bg-color2 {
-    background-color: #000000;
+  background-color: #000000;
 }
+
 .bg-color3 {
-    background-color: #9EBC9F;
+  background-color: #9EBC9F;
 }
+
 .bg-color4 {
-    background-color: #F4F2F3;
+  background-color: #F4F2F3;
 }
+
 .bg-color5 {
-    background-color: #444444;
+  background-color: #444444;
 }
+
 .color1 {
-    color: #D05919;
+  color: #D05919;
 }
+
 .color2 {
-    color: #000000;
+  color: #000000;
 }
+
 .color3 {
-    color: #9EBC9F;
+  color: #9EBC9F;
 }
+
 .color4 {
-    color: #F4F2F3;
+  color: #F4F2F3;
 }
+
 .color5 {
-    color: #444444;
+  color: #444444;
 }
 
 /* Header */
-
 .navbar-brand img {
-    height: 4rem;
-    width: auto;
+  height: 4rem;
+  width: auto;
 }
 
 /* Banner Principal */
-
 #home-banner {
-    height: 28rem;
-    background-image: url('../img/banners/banner-principal1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 28rem;
+  background-image: url("../img/banners/banner-principal1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 992px) {
-    #home-banner {
-      height: 38rem;
-    }
+  #home-banner {
+    height: 38rem;
   }
-
+}
 .banner-bg-mask {
-    background-color: #7570838f;
+  background-color: rgba(117, 112, 131, 0.5607843137);
 }
 
 /* Servicios */
-
 .servicios .card {
-    height: 100%;
-    text-align: center;
-    background-color: #D05919;
-    color: white;
+  height: 100%;
+  text-align: center;
+  background-color: #D05919;
+  color: white;
 }
 
 .servicios .card:hover {
-    transition: 0.5s;
-    background-color: white;
-    color: #000000;
+  transition: 0.5s;
+  background-color: white;
+  color: #000000;
 }
 
 /* Second Banner */
-
 #second-banner {
-    height: 40rem;
-    background-image: url('../img/banners/second-banner.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
+  height: 40rem;
+  background-image: url("../img/banners/second-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Paginas Secundarias Banner */
-
 #second-page-banner {
-    height: 32rem;
-    background-image: url('../img/banners/second-banner2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  height: 32rem;
+  background-image: url("../img/banners/second-banner2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Portafolio */
-
 .portafolio .card {
-    height: 100%;
-    text-align: center;
+  height: 100%;
+  text-align: center;
 }
 
 /* Skills Page */
-
 /* Grid */
-
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 80vh;
 }
 
 @media screen and (max-width: 980px) {
-    .skills-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        min-height: 80vh;
-    }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 80vh;
+  }
 }
-
 .skills-grid-item {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-grid-item .card {
-    height: 90%;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
 @media screen and (max-width: 1250px) {
-    .skills-grid-item .card {
-        margin-bottom: 1.8rem;
-    }
+  .skills-grid-item .card {
+    margin-bottom: 1.8rem;
+  }
 }
-
 .experience-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    height: 90%;
-    width: 90%;
-    justify-items: center;
-    align-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  height: 90%;
+  width: 90%;
+  justify-items: center;
+  align-content: center;
 }
 
 @media screen and (max-width: 1250px) {
-    .experience-grid .card {
-        height: 80%;
-    }
+  .experience-grid .card {
+    height: 80%;
+  }
 }
-
-
 .experience-grid-item {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .experience-grid-bar {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 /* Progress Bars */
 .progress-bar {
-    width: 60%;
-    border: solid 1px;
-    height: 1.5rem;
+  width: 60%;
+  border: solid 1px;
+  height: 1.5rem;
 }
 
 @media screen and (max-width: 1250px) {
-    .progress-bar {
-        width: 100%;
-    }
+  .progress-bar {
+    width: 100%;
+  }
+}
+.progress-0 {
+  border: solid 1px;
+  height: 1.5rem;
+  width: 0%;
 }
 
-.progress-0 {
-    border: solid 1px;
-    height: 1.5rem;
-    width: 0%;
-}
 .progress-1 {
-    border: solid 1px;
-    height: 1.5rem;
-    width: 20%;
-    animation: one-year 5s ease;
+  border: solid 1px;
+  height: 1.5rem;
+  width: 20%;
+  animation: one-year 5s ease;
 }
+
 .progress-2 {
-    border: solid 1px;
-    height: 1.5rem;
-    width: 40%;
-    animation: two-year 5s ease;
+  border: solid 1px;
+  height: 1.5rem;
+  width: 40%;
+  animation: two-year 5s ease;
 }
+
 .progress-3 {
-    border: solid 1px;
-    height: 1.5rem;
-    width: 60%;
-    animation: three-year 5s ease;
+  border: solid 1px;
+  height: 1.5rem;
+  width: 60%;
+  animation: three-year 5s ease;
 }
+
 .progress-4 {
-    border: solid 1px;
-    height: 1.5rem;
-    width: 80%;
-    animation: four-year 5s ease;
+  border: solid 1px;
+  height: 1.5rem;
+  width: 80%;
+  animation: four-year 5s ease;
 }
+
 .progress-5 {
-    border: solid 1px;
-    height: 1.5rem;
-    width: 100%;
-    animation: five-year 5s ease;
+  border: solid 1px;
+  height: 1.5rem;
+  width: 100%;
+  animation: five-year 5s ease;
 }
 
 @keyframes one-year {
-    0% {
-        width: 0;
-    }
-    20% {
-        width: 20%;
-    }
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 20%;
+  }
 }
 @keyframes two-year {
-    0% {
-        width: 0;
-    }
-    20% {
-        width: 40%;
-    }
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 40%;
+  }
 }
 @keyframes three-year {
-    0% {
-        width: 0;
-    }
-    20% {
-        width: 60%;
-    }
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 60%;
+  }
 }
 @keyframes four-year {
-    0% {
-        width: 0;
-    }
-    20% {
-        width: 80%;
-    }
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 80%;
+  }
 }
 @keyframes five-year {
-    0% {
-        width: 0;
-    }
-    20% {
-        width: 100%;
-    }
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 100%;
+  }
 }
-
-/* Servicios */
-
+/* Servicios Page */
 .servicios .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* Portafolio */
-
-
-/* Contacto */
-
+/* Portafolio */ /* Contacto */
 #mensaje {
-    height: 15rem;
+  height: 15rem;
 }
 
 /* Footer */
-
-
-
 .footer__logo img {
-    border: solid 10px #D05919;
+  border: solid 10px #D05919;
 }
 
-
 .footer__contacto a {
-    text-align: center;
-    gap: 2px;
-    width: 90%;
-    margin: 0.5rem;
-    color: white;
-    background-color: #D05919;
+  text-align: center;
+  gap: 2px;
+  width: 90%;
+  margin: 0.5rem;
+  color: white;
+  background-color: #D05919;
 }
 
 .footer__nav li {
-    background-color: #D05919;
-    padding: 0.5rem;
-    border-radius: 3rem;
-    margin: 1rem 10rem;
-    list-style: none;
+  background-color: #D05919;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  margin: 1rem 10rem;
+  list-style: none;
 }
 
 .footer__nav a {
-    text-align: center;
-    gap: 2px;
-    width: 50%;
-    margin: 0.5rem;
-    color: white;
-    background-color: #D05919;
+  text-align: center;
+  gap: 2px;
+  width: 50%;
+  margin: 0.5rem;
+  color: white;
+  background-color: #D05919;
 }
 
 /*  @media screen and (min-width: 990px) {
@@ -339,18 +326,18 @@
         display: none;
     }
 } */
-
 .footer__copyright {
-    display: flex;
-    font-size: 1.2rem;
-    background-color: #D05919;
-    color: white;
-    margin: 0;
-    padding: 1rem 0;
+  display: flex;
+  font-size: 1.2rem;
+  background-color: #D05919;
+  color: white;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .footer__copyright a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
+/*# sourceMappingURL=style.css.map */
