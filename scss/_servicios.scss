@@ -1,9 +1,21 @@
 /* Servicios Page */
 
 .servicios .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    @include flex-column;
     justify-content: center;
-    align-items: center;
+}
+
+
+/* Servicios */
+
+.servicios {
+    .card {
+        height: 100%;
+        text-align: center;
+    }
+    .card:hover{
+        transition: 0.5s;
+        background-color: $white;
+        color: $color5;
+    }
 }

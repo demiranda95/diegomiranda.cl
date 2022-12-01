@@ -1,7 +1,7 @@
 /* Footer */
 
 .footer__logo img {
-    border: solid 10px #D05919;
+    border: solid 10px $color1;
 }
 
 
@@ -10,46 +10,40 @@
     gap: 2px;
     width: 90%;
     margin: 0.5rem;
-    color: white;
-    background-color: #D05919;
+    color: $white;
+    background-color: $color1;
 }
 
-.footer__nav li {
-    background-color: #D05919;
-    padding: 0.5rem;
-    border-radius: 3rem;
-    margin: 1rem 10rem;
-    list-style: none;
-}
-
-.footer__nav a {
-    text-align: center;
-    gap: 2px;
-    width: 50%;
-    margin: 0.5rem;
-    color: white;
-    background-color: #D05919;
-}
-
-/*  @media screen and (min-width: 990px) {
-    .footer__contacto {
-        width: 80%;
+.footer__nav { 
+    
+    & li {
+        background-color: $color1;
+        padding: 0.5rem;
+        border-radius: 3rem;
+        margin: 1rem 10rem;
+        list-style: none;
     }
-    .footer__maps, .footer__nav {
-        display: none;
+
+    & a {
+        text-align: center;
+        gap: 2px;
+        width: 50%;
+        margin: 0.5rem;
+        color: $white;
+        background-color: $color1;
     }
-} */
+}
 
 .footer__copyright {
     display: flex;
     font-size: 1.2rem;
-    background-color: #D05919;
-    color: white;
+    background-color: $color5;
+    color: $color3;
     margin: 0;
     padding: 1rem 0;
-}
 
-.footer__copyright a {
-    color: white;
-    text-decoration: none;
+    & a {
+        color: $color3;
+        text-decoration: none;
+    }
 }

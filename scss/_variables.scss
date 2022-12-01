@@ -2,33 +2,67 @@
 
 /* Palette Color */
 
+$color1: #6F8AB7;
+$color2: #000000;
+$color3: #89BBFE;
+$color4: #F4F2F3;
+$color5: #615D6C;
+$white: #ffffff;
+$black: #000000;
+
 .bg-color1 {
-    background-color: #D05919;
+    background-color: $color1;
 }
 .bg-color2 {
-    background-color: #000000;
+    background-color: $color3;
 }
 .bg-color3 {
-    background-color: #9EBC9F;
+    background-color: $color3;
 }
 .bg-color4 {
-    background-color: #F4F2F3;
+    background-color: $color4;
 }
 .bg-color5 {
-    background-color: #444444;
+    background-color: $color5;
 }
 .color1 {
-    color: #D05919;
+    color: $color1;
 }
 .color2 {
-    color: #000000;
+    color: $color3;
 }
 .color3 {
-    color: #9EBC9F;
+    color: $color3;
 }
 .color4 {
-    color: #F4F2F3;
+    color: $color4;
 }
 .color5 {
-    color: #444444;
+    color: $color5;
 }
+
+
+@mixin bg-images {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin height-width-90 {
+    height: 90%;
+    width: 90%;
+}
+
