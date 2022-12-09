@@ -72,14 +72,19 @@
 
 /* Second Banner */
 #second-banner {
-  height: 40rem;
+  height: 30rem;
   background-image: url("../img/banners/second-banner.jpg");
   background-position: bottom;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media screen and (min-width: 992px) {
+  #second-banner {
+    height: 38rem;
+    background-attachment: fixed;
+  }
+}
 /* Paginas Secundarias Banner */
 #second-page-banner {
   height: 32rem;
